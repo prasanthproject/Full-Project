@@ -1,0 +1,228 @@
+#planner
+{
+    background-color: #fff; 
+    overflow-x: hidden;
+}
+
+/* ----------------------------------------------- PLANNER HEADER------------------------------ */
+#planner_navbar{
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 3px 0px;
+    width: 100vw !important;
+    transition: all .7s;
+}
+#planner_navbar .navbar-brand{
+    padding: 0 50px;
+    color: #df5297!important;
+    font-size: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+#homeicon{
+    color: red;
+}
+.navbar.Planner_scroll{
+    background-color: #fff;
+}
+
+#planner_navbar li a{
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+  }
+  #planner_navbar li a:after{
+    content: "";
+    position: absolute;
+    background-color:#ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 4px;
+    transition: 0.3s;
+  }
+  #planner_navbar  .nav-link:hover:after{
+    width: 100%;
+  }
+
+
+
+.planner_header img{
+    height: 100vh;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+/* ---------------------------------GRID OPTIONS */
+
+#planner_categroies_title
+{
+    font-size: 25px;
+    letter-spacing: 1.2px;
+    margin-left: 45px;
+    margin-top: 70px;
+    /* margin: 5rem 45px 0 0; */
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+@media only screen and (min-width:940px)
+{
+.grid_layout
+{
+    display: grid;
+    width: 100vw;
+    height: 81vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    " b4 b1 b2 b3 "
+    " b4 b1 b2 b3 "
+    " b4 b5 b6 b7 "
+    " b4 b5 b6 b7"       
+    ;
+    gap: 5px;
+    overflow: hidden;
+}
+
+
+.grid_layout div
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    position: relative;
+
+}
+.grid_layout div img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow-y: hidden;
+    /* object-fit: cover; */
+}
+.box1{    grid-area: b1;}
+.box2{    grid-area: b2;}
+.box3{    grid-area: b3;}
+.box4{    grid-area: b4;}
+.box5{    grid-area: b5;}
+.box6{    grid-area: b6;}
+.box7{    grid-area: b7;}
+.grid_layout .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:  rgba(0, 0, 0, .70);
+    overflow: hidden;
+    height: 0;
+    transition: .7s ease;
+}
+.grid_layout .overlay h5{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.grid_layout .overlay div{
+    color: white;
+    padding: 0 15px;
+    letter-spacing: 1.3px;
+    font-family: 'Kanit', sans-serif;
+}
+.grid_layout .overlay #btn{
+    background-color:  rgba(0, 0, 0, .80);
+    color: white;
+    padding: 5px 15px;
+    border: 2px white solid;
+    border-radius: 2px;
+    width: 35%;
+    margin-left: 6rem;
+    font-family: 'Albert Sans', sans-serif;
+}
+.grid_layout .overlay #btn:hover{
+    color: #fff;
+    background-color:  rgba(0, 0, 0, .40);
+    letter-spacing: 1.4px;
+}
+.box1:hover .overlay{    height: 100%;}
+.box2:hover .overlay{    height: 100%;}
+.box3:hover .overlay{    height: 100%;}
+.box4:hover .overlay{    height: 100%;}
+.box5:hover .overlay{    height: 100%;}
+.box6:hover .overlay{    height: 100%;}
+.box7:hover .overlay{    height: 100%;}
+}
+
+
+@media only screen and (max-width:940px)
+{
+    .grid_layout
+    {
+        display: block;
+    }
+    .grid_layout div
+    {
+        margin: auto;
+        margin-top: 5px;
+        width: 350px;
+        height: 350px;
+        position: relative;
+        overflow: hidden;
+}
+.grid_layout div img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow-y: hidden;
+}
+.grid_layout .overlay{
+    width: 350px;
+    height: 350px;
+    bottom: 0;
+    top: 0;
+    right: -100%;
+    display:block;
+    position: absolute;
+    background-color:  rgba(0, 0, 0, .70);
+    overflow: hidden;
+    transition: .5s ease;
+}
+.grid_layout .overlay div{
+    color: white;
+    display: none;
+
+}
+.grid_layout .overlay h5{
+    text-align: center;
+    color: white;
+    margin: 2rem 0 0 0 ;
+}
+.grid_layout .overlay #btn{
+    background-color:  rgba(0, 0, 0, .70);
+    color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 10px 15px ;
+    margin: 6rem 0rem 0 7rem;
+
+}
+.box1:hover .overlay{    right: 0;}
+.box2:hover .overlay{   right: 0;}
+.box3:hover .overlay{   right: 0;}
+.box4:hover .overlay{   right: 0;}
+.box5:hover .overlay{   right: 0;}
+.box6:hover .overlay{   right: 0;}
+.box7:hover .overlay{   right: 0;}
+
+
+}
+
+/* ***************************************************   CATEGROIES OPTIONS LIST             ************************************************************ */
+
+/* *******************************************************  VENDOR PAGE CSS****************************************************************** */
+#package{
+    overflow-x: hidden;
+}
+/* ******************************************Catering Homapage -------------------------------------- */
+/* ************************************** */

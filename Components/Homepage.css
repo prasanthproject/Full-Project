@@ -1,0 +1,408 @@
+/***************************************************************** HOMEPAGE NavBar ****************************************************** */
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+#homepage{
+  /* background-color: #fcf4f8;  */
+  overflow-x: hidden;
+}
+.navbar{  
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 3px 0px;
+    transition: all .7s;
+}
+.navbar-nav{
+    font-size: 18px;
+}
+.navbar-brand{
+    padding: 0 50px ;
+    color: #df5297!important;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Lexend Deca', sans-serif;
+}
+#homapageNavbar .nav-link{
+  transition: all .7s;
+}
+.navbar.scroll{                  /* Animation Navbar     */
+  background: #fff;
+}
+.nav-link-font
+{
+  color: #2b8b0e !important;  
+}
+#homapageNavbar li a{
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-family: 'Julius Sans One', sans-serif;
+  text-decoration: none;
+}
+#homapageNavbar li a:after{
+  content: "";
+  position: absolute;
+  background-color:#ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 4px;
+  transition: 0.3s;
+}
+#homapageNavbar  .nav-link:hover:after{
+  width: 100%;
+}
+/* #homapageNavbar li a:hover
+{
+  color:red;
+} */
+/* *****************************************************BACKGROUND IMAGE--------------------------------------------------------------- */
+.header
+{
+  position: relative;
+}
+.header img{
+  height: 100vh;
+  width: 100%;
+  /* -o-object-fit: cover; */
+  /* object-fit: cover; */
+}
+ .header .overlay
+ {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #000;
+   opacity: 0.4;
+ }
+ .header .content
+ {
+   position: absolute;
+   top: 35%;
+   left: 5%;
+   color: white;
+ }
+ .header .content h6{
+      font-size: 50px;
+      font-family: 'Faustina', serif;
+      letter-spacing: 1.2px;
+ }
+.header .content span{
+  font-size: 5rem;
+  font-family: 'Faustina', serif;
+  color: white;
+
+}
+.header .content button
+{
+  position: relative;
+    background:none;
+    top:10px;
+    left:140px;
+    border: 2px solid #f92d45; 
+    color: #f92d45;
+    font-family: 'Albert Sans', sans-serif;
+    min-width: 150px;
+    border-radius: 3px;
+    letter-spacing: 1.2px;
+    padding: 10px 10px;
+    transition: color .4s white;
+    font-size: 1.2rem;
+    font-weight: bolder;  
+}
+.header .content button:hover{
+  color: #fff;
+  }
+ .header .content button::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f92d45; 
+  z-index: -1;
+  transition: transform .7s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(.5,1.6,.4,.7);
+  }
+  .header .content button::before{
+  transform: scaleX(0);
+  }
+  .header .content button:hover::before{
+  transform: scaleX(1);
+  }
+  
+
+/* *****************************************************BLOGGING TO  */
+
+#homepage_blog
+{
+  margin: 5rem 0 2rem 0 ;
+  padding: 4rem 2rem;
+}
+#homepage_blog #content{
+  padding: 1rem 2rem;
+}
+#homepage_blog #content h3{
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: bold;
+  color: #005432;
+  font-size: 22px;
+}
+#homepage_blog #content li{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  padding: 1rem  0 0 0.4rem;
+  font-family: 'Montserrat', sans-serif;
+  /* list-style-type: none; */
+}
+#homepage_blog #content p{
+  font-size: 15px;
+  opacity: .5;
+  margin: 0 0 0 2.5rem ;
+}
+#homepage_blog #video{
+  padding: 1rem 2rem;
+}
+#homepage_blog #video img{
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+}
+/* *********************************** EXPERTS  PROFILE CARD    ************************************** */
+#designerCard{
+  width: 100%;
+}
+#profile_title h2{
+  font-weight: bolder;
+  margin: 0 0 2rem 2rem;
+  border-radius: 5px;
+  font-size: 25px;
+  color: #005432;
+  font-family: 'Montserrat', sans-serif;
+}
+#designerCard .card
+{
+  align-items:center; 
+  /* width: 32%; */
+  margin: 2rem 2rem;
+  height: 230px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.2) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border: rgba(0, 0, 0, 0.15) 1px solid;
+  transition: 0.4s;
+}
+#designerCard .card .cardImg
+{
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translate(-150%,20%);
+  width: 100px;
+  height: 100px;
+  background:#fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: 0.4s;
+}
+#designerCard .card:hover .cardImg{
+  width: 105px;
+  height: 105px;
+  transform: translate(-50%,20%);
+}
+#designerCard .card .cardImg img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#designerCard .card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#designerCard .card .content .name .para p{
+  opacity: 0.7;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+#designerCard .card .content .name{
+
+  padding: 0px 15px 3px 15px;
+  width: 100%;
+}
+#designerCard .card .content .name h4{
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  color: #0856cf;
+  width: 100%;
+  text-align: right;
+}
+#designerCard .card .content .name h4 span{
+  font-size: 15px;
+  color: green;
+  opacity: .6;
+}  
+.homepage_arrow
+{
+  position: absolute;
+  top: 43%;
+  padding: 5px 4px;
+  border-radius: 50%;
+} 
+.homepage_arrow.left{
+  left: 1%;
+  box-shadow: 2px 2px 5px rgba(0, 0,0, 0.35);
+
+}
+
+.homepage_arrow.right{
+  right: 1%;
+  box-shadow: -2px 2px 5px rgba(0, 0,0, 0.35);
+}
+
+
+  /************************************************************ Categories Card styles *******************************************************/
+ 
+#categories_title >  p {
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 5px 0;
+  border-radius: 5px;
+  font-size: 25px;
+  background-color: #005432;
+  color: #ebecef;
+  font-family: 'Montserrat', sans-serif;
+
+}
+#categories_title{
+   margin: 6rem 0 3rem 0;
+}
+#Categoriescard #plan_card{
+  margin: auto;
+}
+  #Categoriescard  .card{   
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    background-color: #fcf4f8;
+  
+  }
+  #Categoriescard  .card:hover{
+    box-shadow:-1px 3px 5px rgba(0, 0, 0, 0.35);
+    transition: .5s ease-in-out;
+    
+  }
+  #Categoriescard  .card img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;  
+  }
+  #Categoriescard  .card:hover img {
+  transform: scale(.95);
+  transition: .5s ease-in-out;
+}
+#Categoriescard .card-body{
+    transition: .7s ease;
+    width: 100%;
+}
+#Categoriescard .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  height: 15%;
+  background-color: white;
+  transition: .7s ease;
+}
+#Categoriescard .card:hover .card-body {
+  height: 30%;
+}
+
+#Categoriescard  .card-body .card-title {
+  margin-bottom: calc(50% + 20px);
+  transition: .7s ease;
+}
+#Categoriescard  .card-title{
+  color: #e54640;
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#Categoriescard  .card:hover .card-body .card-title {
+  margin-bottom: 1rem;
+  text-align: start;
+  /* transition: 1.7s ease; */
+
+}
+#Categoriescard .card-body button{
+  letter-spacing: 1.5px;
+  border: none;
+  width: 90%;
+  border: 1px solid #198754;
+  font-family: 'Albert Sans', sans-serif;
+  border-radius: 3px;
+  padding: 5px 15px;
+  margin-right: 2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #198754 !important;
+}
+#Categoriescard  .card-body button:active{ 
+  box-shadow:-2px 4px 6px rgba(0, 0, 0, 0.35)
+}
+/* ************************************     BACKTOTOPBUTTON  ******************************** */
+#backToTopButton
+{
+    background:#0b4e93;
+    border-radius: 50%;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.50) 2px 3px 3px 0px; 
+    position:fixed;
+    bottom:50px;
+    right:50px; 
+    height:50px;
+    width:50px;
+  }
+  #backToTopButton #top_arrow
+  {
+    font-size:50px;
+    padding: 0px 11px 2px 0px;
+    color: #d0ecf4;
+}
+#customer_details h3
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #e54640;
+
+}
+
+#customer_details .card
+{   
+    margin-top: 5rem;
+    margin-left: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 2px 3px 5px rgba(60, 64, 67, 0.15);
+     /* background-color: #02b835; */
+}
+#customer_details #btn{
+  border-radius: 3px;
+  background-color: #198754 !important;
+  font-family: 'Albert Sans', sans-serif;
+  border: 1px solid #198754;
+  font-weight: bold;
+  color: white;
+}

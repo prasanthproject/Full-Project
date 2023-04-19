@@ -1,0 +1,139 @@
+#login_menubar,#login_form{
+    margin-top: 5rem;
+}
+#login_menubar .nav-item
+{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border: none;
+}
+#login_menubar .nav-item .nav-link
+{
+    font-size: 20px;    
+}
+
+#login_menubar .nav-item .nav-link.active
+{
+    background-color: white;    
+    color: #02b835;
+    font-size: 20px;
+    border-radius: 0px;
+    border-bottom: #02b835 5px solid;
+
+}
+#login_form .card,#register .card{
+    box-shadow: rgba(0, 0, 0, 0.35) 1px 5px 5px;
+}
+#login_form #login_footer a,#register_form #register_footer a{
+    text-decoration: none;
+}
+#login_form input,#register_form input{
+    box-shadow: none;
+    border-radius: 0px;
+}
+#login_form #login_btn
+{
+    border: none;
+    border-radius: 2px;
+    background-color:#2b8b0e;
+    opacity: 0.8;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+    font-family: 'Albert Sans', sans-serif;
+    letter-spacing: 1.2px;
+    padding: 5px 15px;
+    width: 85%;
+}
+#login_form #login_btn:hover
+{   
+    opacity: 1;
+
+}
+#register_form #register_btn
+{
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(228, 32, 32);
+    opacity: 0.7;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+    font-family: 'Albert Sans', sans-serif;
+    letter-spacing: 1.2px;
+    color: white;
+    padding: 5px 15px ;
+    width: 85%;
+}
+#register_form #register_btn:hover{
+    opacity: 1;
+}
+
+#login_form #login_footer,#register_form #register_footer{
+    color: rgb(124, 123, 123);
+}
+#required
+{
+    font-size: 12px;
+    color:red;
+    margin-left: 3px;
+}
+
+/* ******************************************   POPUP    ********************************** */
+.Popup
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.Popup .Popup_inner
+{
+    max-width: 40%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 1px;
+    color: white;
+    margin: 250px 30% 0 30%;    
+}
+.Popup .text2
+{
+    text-align: center;
+    text-decoration: underline;
+    color: mediumblue;
+    font-size: 150%;
+    margin: 15px 0;
+}
+.Popup .close
+{
+    display: inline;
+    float: right;
+    padding: 0%;
+    margin: 0%;
+    border: 1px solid red;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    background-color: rgba(248,21,40,0.4);
+    transition: 0.5s;
+}
+.Popup .close:hover
+{
+    color: white;
+    background-color: rgba(248,21,40);
+    opacity: 1;
+}
+.Popup .tick
+{
+    color: green;
+    font-size: 50px;
+    margin-bottom: 15px ;
+    padding: 5px 15px;
+    border-radius: 50%;
+    border:5px double darkgreen
+}

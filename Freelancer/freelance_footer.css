@@ -1,0 +1,42 @@
+#freelance_footer
+{
+    background-color: #fff;
+}
+#freelance_footer #footer_detail{
+     background-color: #005432; 
+}
+#freelance_footer #personal_details h3{
+    color: white;
+}
+#freelance_footer #personal_details h6{
+    color:#ced0db;
+}
+#freelance_footer #personal_details #logo{
+    list-style-type: none;
+}
+hr{
+    color: white;
+}
+#freelance_footer > #about_list , #help_list , #legal_list {
+    list-style-type: none;
+}
+#freelance_footer #icons{
+    color:#ced0db;
+    margin-top: 1rem;
+}
+#freelance_footer #facebook{
+    cursor: pointer;
+}
+#freelance_footer #instagram ,#youtube,#twitter{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+#freelance_footer #about_list a, #help_list a, #legal_list a{
+text-decoration: none;
+line-height: 5vh;
+color:#ced0db;
+
+}
+#freelance_footer #other_details h5{
+    color:white;    
+}

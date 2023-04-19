@@ -1,0 +1,433 @@
+#Invitation_plan
+{
+    background-color: #eefce2;
+    overflow-x: hidden;
+}
+/* ****************************************       */
+#carouselExampleIndicators6{
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;    
+}
+#carouselExampleIndicators6 >.carousel-inner> .carousel-item> img{
+    border-radius: 1rem;
+    height: 90vh;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+#carouselExampleIndicators6 .overlay1{    
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-radius: 1rem;
+   height: 90vh;
+   width: 100%;  
+   background-color: rgba(0, 0, 0, 0.6);
+   opacity: 0.3 ;    
+}
+#carouselExampleIndicators6 .content1 {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%,-50%);
+        color: #fff;   
+}
+#carouselExampleIndicators6 .content1 h6{
+    position: relative;
+    left: 140px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+#carouselExampleIndicators6 .content1 p{
+        font-size: 12px;
+}
+#carouselExampleIndicators6 .content1 #btn{
+    position: relative;
+    background:none;
+    top:10px;
+    left:140px;
+    border: 2px solid #f92d45; 
+    color: #f92d45;
+    font-family: 'Albert Sans', sans-serif;
+    min-width: 150px;
+    border-radius: 3px;
+    letter-spacing: 1.2px;
+    padding: 10px 10px;
+    transition: color .4s white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+#carouselExampleIndicators6 .content1 #btn:hover{
+color: #fff;
+}
+#carouselExampleIndicators6 .content1 #btn::before{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: #f92d45;
+z-index: -1;
+transition: transform .7s;
+transform-origin: 0 0;
+transition-timing-function: cubic-bezier(.5,1.6,.4,.7);
+}
+#carouselExampleIndicators6 .content1 #btn::before{
+transform: scaleX(0);
+}
+#carouselExampleIndicators6 .content1 #btn:hover::before{
+transform: scaleX(1);
+}
+
+
+/* **************************       INVITATIONS CATEGROIES  ************************************** */
+
+#invitation_categroies{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+#invitation_categroies #categroies_head p{
+        position: relative;
+        top:25px;
+        font-size: 18px;    
+        font-weight: bold;
+        font-family: 'Lexend Deca', sans-serif;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+@media only screen and (min-width:992px)
+{
+    #invitation_categroies ul
+    {
+        display: flex;
+        margin-bottom: 0px;
+    }   
+}
+@media only screen and (max-width:576px)
+{
+    #invitation_categroies ul
+    {
+        display: block;
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (max-width:992px)
+{
+    #invitation_categroies ul li {
+        background-color: red;
+        width: 200px;
+    }
+    
+}
+#invite_type #type_btn{
+    position:relative ;
+    padding:5px 10px ;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 1.1px;  
+    font-size: 14px;    
+    border: none;
+    color:#058240 ;
+    background-color: #eefce2;
+    border:2px solid #058240;
+    border-radius: 3px;
+    margin:0 5px;
+}
+#invite_type #type_btn:hover{
+    transform: scale(1,1.1);
+    
+}
+
+#invitation_categroies ul li{
+    list-style: none;
+    grid: flex;
+    padding: 10px 20px;
+    margin: 5px;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    border: #03a9f4 2px solid;
+    background: white;
+    border-radius: 5px;
+}
+#invitation_categroies ul li.active{
+    background: #03a9f4;
+    color: white;
+}
+/* **************************       INVITATIONS  FILTER  ************************************** */
+
+#invitation_filter
+{
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.55) 1.95px 1.95px 2.6px;
+    /* background-color: #058240; */
+    
+}
+
+/* **************************       PRODUCT VIEW  ************************************** */
+#body
+{
+    overflow-y: hidden;
+    /* display: flex; */
+    background-color: #eefce2;
+
+}
+#contanier
+{
+    position: relative;
+}
+#container #Invitation_Card
+{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    margin: 50px 10px 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: 0.3s ease-in-out;
+    border-radius: 4px;
+
+}
+#container #Invitation_Card:hover{
+    height: 400px;
+}
+#container #Invitation_Card #imgSx
+{
+    position: relative;
+    width: 260px;
+    height:260px;
+    background-color: #cccccc;
+    top: -60px;
+    left: 25px;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+#container #Invitation_Card #imgSx img{
+    border-radius: 4px;
+}
+#container #Invitation_Card #content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+#container #Invitation_Card:hover #content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+}
+#Invitation_Card #content #title
+{
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    color: #16384c;
+    letter-spacing: 1.2px;
+}
+#Invitation_Card #content #price
+{
+    position: relative;
+    font-size: 16.5px;
+    top:-15px;
+    text-align: left;
+    color: #424547;
+    letter-spacing: 1.2px;
+    font-family: 'Chivo Mono', monospace;   
+    font-weight: bold;
+}
+#Invitation_Card #content #btn
+{
+    font-family: 'Albert Sans', sans-serif;
+    position: relative;
+    top: -15px;
+    background-color: #fbfaff;
+    color: #111;
+    width: 10rem;
+    margin-bottom: 2rem;
+    padding: 5px 0;
+    border: #16384c solid 2px;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .5s;
+}
+#Invitation_Card #content #btn:hover
+{
+    background-color: #16384c;
+    color: white;
+}
+#invitation_Loadmore{
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    border: #4b92ff solid 1px;
+    background-color:#b7e3ff;
+    color: #0856cf;
+    font-family: 'Albert Sans', sans-serif;
+    border-radius: 3px;
+    transition: .4s ease-in-out;
+}
+ #invitation_Loadmore:hover
+{
+    color: #b7e3ff;
+    background-color: #0856cf;
+}
+/* *******************************************   INVITATION PRODUCT PAGE    ****************************** */
+#invite_product_page
+{
+    margin-top: 5rem;
+}
+#invite_product_page img
+{
+    height: 580px;
+    width: 90%;
+}
+
+#invite_product_page .category
+{
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.6;
+    font-size: 25px;
+}
+#invite_product_page .name
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+}
+#invite_product_page .price
+{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+}
+                            /*  ***************************    PRODUCT PAGE NAVBAR    ******************* */
+#Invite_ProductPage_navbar .btn-cart{
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    padding: 5px 25px;
+    border-radius: 3px;
+}
+#Invite_ProductPage_navbar .btn-back{
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    padding: 5px 25px;
+    border-radius: 3px;
+}
+/* *********************************   RADIO BUTTON IN PRODUCT PAGE    ************************** */
+#invite_product_page input[type="radio"]{
+     transform: scale(1.4);
+}
+#invite_product_page #language .card{
+    margin: 0px 5px;
+    position: relative;
+    color: #fff;
+    background-color: #2196F3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border: 2px solid #2196F3;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.65);
+
+}
+#invite_product_page #language .card label{
+    margin-left:15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#invite_product_page #language p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    padding: 0px 4px;
+} 
+
+/* *******************************   CARTLIST     ****************************************** */
+#cartlist
+{
+    overflow-x: hidden;
+    margin-top: 5rem;
+}
+#cartlist #cartlist_card
+{
+    margin: 0 auto;
+    width: 80%;
+    border: #03a9f4 2px solid;
+    padding: 10px 0 0 0;
+    display: flex;
+}
+#cartlist #cartlist_card #name
+{
+    margin-top: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.5rem;
+
+}
+#cartlist #cartlist_card #quantity
+{
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+
+}
+#cartlist #cartlist_card #price,#cartlist #cartlist_card #total
+{
+    margin-top: 6px;
+    padding: 5px 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+}
+#cartlist #totalprice{
+    display: flex;
+    float: right;
+    margin:6rem 8rem 0 0;
+}
+
+#cartlist #totalprice h3
+{
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+
+}
+#cartlist  #totalprice p
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+
+}
+#cartlist #cartlist_card button
+{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+
+}
+

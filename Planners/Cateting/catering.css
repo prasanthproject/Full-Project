@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Chivo+Mono:wght@300&family=Comfortaa:wght@600&family=Forum&family=Julius+Sans+One&family=Kanit:wght@300&family=Lexend+Deca:wght@500&family=Marko+One&family=Montserrat&family=Orbitron:wght@500&display=swap');
+.catering_planner
+{
+    background-color: #e5fdce;
+}
+#carouselExampleIndicators1{
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;    
+}
+#carouselExampleIndicators1 >.carousel-inner> .carousel-item> img{
+    border-radius: 1rem;
+    height: 90vh;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+#carouselExampleIndicators1 .overlay1{    
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-radius: 1rem;
+   height: 90vh;
+   width: 100%;  
+   background-color: rgba(0, 0, 0, 0.6);
+   opacity: 0.5;    
+}
+#carouselExampleIndicators1 .content1 {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%,-50%);
+        color: #fff;   
+}
+#carouselExampleIndicators1 .content1 h6{
+    position: relative;
+    left: 140px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+#carouselExampleIndicators1 .content1 p{
+        font-size: 12px;
+}
+#carouselExampleIndicators1 .content1 #btn{
+    position: relative;
+    background:none;
+    top:10px;
+    left:140px;
+    border: 2px solid #f92d45; 
+    color: #f92d45;
+    font-family: 'Albert Sans', sans-serif;
+    min-width: 150px;
+    border-radius: 3px;
+    letter-spacing: 1.2px;
+    padding: 10px 10px;
+    transition: color .4s white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+#carouselExampleIndicators1 .content1 #btn:hover{
+color: #fff;
+}
+#carouselExampleIndicators1 .content1 #btn::before{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: #f92d45;
+z-index: -1;
+transition: transform .7s;
+transform-origin: 0 0;
+transition-timing-function: cubic-bezier(.5,1.6,.4,.7);
+}
+#carouselExampleIndicators1 .content1 #btn::before{
+transform: scaleX(0);
+}
+#carouselExampleIndicators1 .content1 #btn:hover::before{
+transform: scaleX(1);
+}
+
+
+/* **************************************************** TOP RECEIPES CATERING MENU  */
+.catering_planner #head_title h3{   
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+    margin: 2rem 0 1rem 9rem;
+}
+#top_receipe{
+    /* margin:5rem 0 8rem 1rem;  t r b l    */
+    justify-content: center;
+    display: flex;
+}
+
+@media only screen and (max-width:1200px)
+{
+  #top_receipe {
+    display: grid;  
+    grid-template-columns: repeat(3,1fr);
+
+  }
+}
+
+@media only screen and (max-width:967px)
+{
+  #top_receipe {
+    display: grid;  
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
+@media only screen and (max-width:574px)
+{
+  #top_receipe {
+    display: grid;  
+    justify-content: center;
+    grid-template-columns: repeat(1,1fr);
+
+  }
+}
+#main-container{
+    border: 5px white solid;
+    width: 240px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 15px;
+    position: relative;
+}
+#main-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#main-container .card-body
+{
+    width:100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738; 
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    transition: .5s;
+}
+#main-container:hover .card-body{
+    right: 0;  
+}
+#main-container .card-title
+{
+    position: absolute;
+    width: 100%;
+    bottom: 60%;
+    left: 2%;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-weight: bolder;
+    margin-right:85%;
+}
+#main-container button{
+    background-color: #fff;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    color: #000;
+    border-radius: 5px;
+    border:none;
+    padding: 5px 10px;
+
+}
+.catering_arrow
+{
+    position: absolute;
+    top: 45%;
+    padding: 5px 4px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.90);
+}
+/*        --------------------------------------- SELECT YOUR MENU  CARD  ----------------- */
+.nav-item a.active
+{
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    font-family: 'Forum', cursive;
+    font-size: 21px;
+}
+.nav-item a{
+    font-size: 18px;
+    letter-spacing: 1.2px;
+
+}
+#menu_title h3
+{
+    margin-bottom: 5rem;
+    background-color:gold;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 5px;
+    padding:10px 0;
+}
+.tab-content .tab.pane
+{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#breakfast_items .card , #lunch_items .card , #dinner_items .card{
+        border: 1px solid #f8f9fa;    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#breakfast_items #breakfast-card, #lunch_items #lunch-card , #dinner_items #dinner-card
+{
+    width: 95%;
+    height: 90%;
+}
+#breakfast_items #breakfast-card img , #lunch_items #lunch-card img, #dinner_items #dinner-card img{
+    height: 30vh;
+    object-fit: cover;
+}
+#breakfast_items #breakfast-card span , #lunch_items #lunch-card span , #dinner_items #dinner-card span{
+    font-size: 14px;
+
+}
+#breakfast_items #breakfast-card .card-title , #lunch_items #lunch-card .card-title , #dinner_items #dinner-card .card-title{
+font-family: 'Comfortaa', cursive;
+}
+#breakfast_items #breakfast-card #breakfast_btn , #lunch_items #lunch-card  #lunch_btn, #dinner_items #dinner-card #dinner_btn{ 
+    border: none;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+/* ********************************************************   MENU ITEMs    *********************************************** */
+
+#menu_items ,#lunch_menu_items ,#dinner_menu_items{
+    margin-top: 4rem;
+    overflow-x: hidden;
+}
+
+#breakfast_title,#lunch_title,#dinner_title{
+    text-align: center;
+    padding: 2rem 0;
+    background-color: gold;
+    font-family: 'Marko One', serif;
+    margin: 5px 0;
+}
+#menu_items #tiffen_items,#lunch_menu_items #lunch_items ,#dinner_menu_items #dinner_items
+{
+    padding-left: 5rem;
+}
+#menu_items #tiffen_items h4,#lunch_menu_items #lunch_items h4,#dinner_menu_items #dinner_items h4{
+    font-family: 'Comfortaa', cursive;
+    padding: 1rem 1rem 1rem 0;
+}
+#menu_items #tiffen_items table,#lunch_menu_items #lunch_items table,#dinner_menu_items #dinner_items table{
+    border-collapse: collapse;
+    width: 80%;
+}
+#menu_items #tiffen_items th, td, #lunch_menu_items #lunch_items th,td ,#dinner_menu_items #dinner_items th,td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+}
+#menu_items #tiffen_items #menu_price, #lunch_menu_items #lunch_items #menu_price ,#dinner_menu_items #dinner_items #menu_price{
+        font-family: 'Chivo Mono', monospace;
+        font-size: 17px;
+
+    }
+#menu_items #tiffen_items #menu_name, #lunch_menu_items #lunch_items #menu_name ,#dinner_menu_items #dinner_items #menu_name{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+#menu_items #tiffen_items th, #lunch_menu_items #lunch_items th,#dinner_menu_items #dinner_items th
+{
+        text-transform: capitalize;
+        font-family: 'Lexend Deca', sans-serif;
+}
+#menu_items #tiffen_items button,#lunch_menu_items #lunch_items button,#dinner_menu_items #dinner_items button{
+    padding: 8px 20px;
+    border: none;
+    border-radius:3px;
+    background-color: #0275d8;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+
+}
+#menu_items #tiffen_items button:hover,#lunch_menu_items #lunch_items button:hover,#dinner_menu_items #dinner_items button:hover{
+       transform: scale(1.1,1);
+}
+
+#menu_items #tiffen_items #each_count,#lunch_menu_items #lunch_items #each_count,#dinner_menu_items #dinner_items #each_count{
+        color: gray;
+        font-size: 10px;
+        font-weight: bold;
+        opacity: .8;
+}
+
+
+/* *************************************   Top Receipes ********************************** */
+#top-receipes-title 
+{
+    margin-top: 3rem;
+    background-color: royalblue;
+    font-family: 'Kanit', sans-serif;
+    border-radius:4px;
+}
+#top-receipes-title h3{
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+#top-receipes
+{
+    margin-top: 1.2rem;
+}
+#top-receipes .card
+{
+    position: relative;
+    height: 320px;
+}
+#top-receipes .card-body .card-title
+{
+    font-family: 'Comfortaa', cursive,'sans-serif';
+    font-size: 19px;
+
+}
+#top-receipes .card-body .card-price
+{
+        font-family: 'Chivo Mono', monospace;
+        letter-spacing: 1.2px;
+}
+
+#top-receipes .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+#top-receipes .card #top_receipe_btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-family: 'Albert Sans', sans-serif;
+    overflow: hidden;
+    height: 0px;
+    transition: .3s ease;
+ }
+#top-receipes .card:hover #top_receipe_btn{
+        bottom: 0;
+        height: 100%;
+}
+#top-receipes .card button{
+        background-color: #0275d8;
+        font-family: 'Albert Sans', sans-serif;
+        color: white;
+        border: none;
+        padding: 5px 10px;    
+        position: absolute;
+        bottom: 50%;
+        left: 35%;
+}    
+#top-receipes .card button:hover{
+    transform: scale(1,1.1);
+}
+/*   ************************************************    CATERING CARTLIST    **************************************************************** */
+
+#catering_cartlist
+{
+    overflow-x: hidden;
+    margin-top: 5rem;
+}
+#catering_cartlist #cartlist_card
+{
+    margin: 0 auto;
+    width: 90%;
+    border: #03a9f4 2px solid;
+    padding: 10px 0 0 0;
+    display: flex;
+}
+#catering_cartlist #cartlist_card #name
+{
+    margin-top: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.5rem;
+
+}
+#catering_cartlist #cartlist_card #quantity
+{
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+
+}
+#catering_cartlist #cartlist_card #price , #catering_cartlist #cartlist_card #total
+{
+    margin-top: 6px;
+    padding: 5px 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+}
+#catering_cartlist #input p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+    font-weight: bold;
+    padding: 5px 0 0 65px;
+}
+#catering_cartlist #input input{
+        border: none;
+        padding: 5px;
+        box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.25);
+}
+#catering_cartlist #input input:focus{
+    border: none;
+    outline: none;
+}
+#catering_cartlist #totalprice{
+    display: flex;
+    float: right;
+    margin:6rem 8rem 0 0;
+}
+
+#catering_cartlist #totalprice h3
+{
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+
+}
+#catering_cartlist  #totalprice p
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+
+}
